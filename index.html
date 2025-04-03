@@ -23,8 +23,8 @@
             <h1 class="titulo">Explorando la Biodiversidad de la cuenca alta del rio de Ubaté.</h1>
             <p class="copy"></p>
         </div>
-        
     </header>
+
     <main>
         <section class="services contenedor" id="Información">
             <h2 class="subtitulo">Información</h2>
@@ -46,6 +46,7 @@
                 </div>
             </div>
         </section>
+
         <section class="gallery" id="Galeria">
             <div class="contenedor">
                 <h2 class="subtitulo">Galeria</h2>
@@ -59,10 +60,12 @@
                 </div>
             </div>
         </section>
+
         <div class="imagen-light">
             <img src="img/close.svg" alt="" class="close">
             <img src="" alt="" class="agregar-imagen">
         </div>
+
         <section class="contenedor" id="Biodiversidad">
             <h2 class="subtitulo">Biodiversidad:</h2>
             <section class="experts">
@@ -79,6 +82,13 @@
                     <h3 class="n-expert">Security</h3>
                 </div>
             </section>
+
+            <!-- 📌 Nuevo Botón para Redirigir a Seek -->
+            <div class="contenedor">
+                <h2 class="subtitulo">Identifica Especies con Seek</h2>
+                <button id="seekButton" class="boton-seek">Abrir Seek</button>
+            </div>
+
         </section>
     </main>
 
@@ -86,7 +96,7 @@
         <div class="contenedor footer-content">
                 <div class="contact-us">
                     <h2 class="brand">Julio Cesar Prada</h2>
-                    <h2 class="brand">Diego Chaves Ruiz  </h2>
+                    <h2 class="brand">Diego Chaves Ruiz</h2>
                     <p>Una Ventana a la Naturaleza Local</p>
                 </div>
                 <div class="social-media">
@@ -103,6 +113,14 @@
         </div>
         <div class="line"></div>
     </footer>
+
+    <!-- 📌 Nuevo Script para Redirección con n8n -->
+    <script>
+        document.getElementById("seekButton").addEventListener("click", function() {
+            window.location.href = "https://tu-servidor.n8n.io/webhook/seek";
+        });
+    </script>
+
     <script src="js/menu.js"></script>
     <script src="js/lightbox.js"></script>
 </body>
