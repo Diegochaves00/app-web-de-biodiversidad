@@ -606,7 +606,7 @@ footer {
         width: 95%;
         margin-bottom: 40px;
     }
-    .boton-seek-container {
+  .boton-seek-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -629,4 +629,5 @@ footer {
 .boton-seek:hover {
     transform: scale(1.05);
 }
+
 }
